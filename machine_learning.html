@@ -44,9 +44,14 @@
 			<div class="slides">
 
 				<section>
-					<h2> Geometrical Underpinnings <br> of Machine Learning</h2>
-					<h4> Lorien Hayden</h4>
+					
+					<section>
+						<h2> Geometrical Underpinnings <br> of Machine Learning</h2>
+						<h4> Lorien Hayden</h4>
+					</section>
+	
 				</section>
+				
 
 				<section>
 					<section>
@@ -141,7 +146,7 @@
 
 					<section>
 						<h2> Takeaways</h2>
-						<h4> Comparable performance to the benchmark factor decomposition of Fama and French</h4>
+						<h4> $r^2$ values and PVE are comparable to the performance of the benchmark factor decomposition of Fama and French</h4>
 						<h4> Provides principled means to analyze company exposure and create sector specific indices</h4>
 					</section>
 				</section>
@@ -154,7 +159,10 @@
 
 					<section>
 						<h3> Why does Science Work?</h3>
-						<img width=100% src='sloppydrawing.png'>
+					</section>
+
+					<section data-background="http://www.lassp.cornell.edu/sethna/Sloppy/SloppyFigs/Hierarchies/Dif3.gif">
+						<h2><font color="black">Hyper-ribbons</font></h2>
 					</section>
 
                                         <section>
@@ -163,23 +171,25 @@
                                         </section>
 
 					<section>
+						<img width=70% src="tetrahedron_array_presentation.png" style="background:none; border:none; box-shadow:none;">
+					</section>
+
+					<section>
 						<h3> A Systems Biology Example</h3>
-						<img width=50% src="Erkeqns-238.png"  style="background:none; border:none; box-shadow:none;">
+						<img width=40% src="systemsbiofull.png" style="background:none; border:none; box-shadow:none;">
+						<img width=47% src="Erkeqns-238.jpg"  style="background:none; border:none; box-shadow:none;">
 					</section>
 	
                                         <section>
                                                 <h3> A Systems Biology Example</h3>
-                                                <img width=60%  src="reducedEqns-378.gif">
+						<img width=34.25% src="systemsbioreduced.png">
+                                                <img width=50%  src="reducedEqns-378.gif">
                                         </section>
 	
 					<section>
-						<h3> A Systems Biology Example</h3>
-						<p style='vertical-align:middle'>
-						<img width=40% src="PC12FlowDiagramNoCrosses-small-374.png">
-						<img width=40% src="PC12FlowDiagramReducedCleanup-small-377.png">
-						</p>
+						<img width=60% src='decoder.png' style="background:none; border:none; box-shadow:none;">
 					</section>
-					
+
 					<section>
 						<h3> Jeffrey's Prior </h3>
 						<p> $$	H\approx\sum_k\bigg{(}\frac{\partial y_k^\theta}{\partial\theta_i}\frac{\partial y_k^\theta}{\partial\theta_j}\bigg{)}=J^TJ$$</p>
@@ -204,12 +214,21 @@
                                         <section>
                                                 <h3> Boundary Relationship</h3>
                                                 <p> N-1 and N-dimensional descriptions have a boundary relationship: $M_{N−1} \approx \partial M_{N}$</p> 
-                                                <p> Jeffrey's Prior $\rightarrow$ Generative Model (e.g. VAE)</p>
+                                             	<p>Transtrum et. al. has explored the relationship between manifold boundaries and
+emergent model classes</p>
+					</section>
+
+					<section>
+						<h3>Paradox</h3>
+						<p> For a hyper-ball 95.8 % of the the volume is within 10% of
+the surface. </p>
+						<p> Conversely, for a 10-D sphere with radius 1 and cap height 0.1, the volume of the cap corresponds to a tiny 0.0014%</p>
+						<p> Jeffrey's Prior $\rightarrow$ Generative Model (e.g. VAE)</p>
                                         </section>
 
                                         <section>
                                                 <h3> Curse of Dimensionality</h3>
-                                                <img width=80% src='isingReplicas.png' style="background:none; border:none; box-shadow:none;">
+                                                <img width=45% src='Ising_Replicated.png' style="background:none; border:none; box-shadow:none;">
 						<p> InPCA: Katherine Quinn et. al.</p>
                                         </section>
 
@@ -220,12 +239,12 @@
 					</section>
 
 				</section>
-				
+<!--	
 				<section>
 					<h3>Summary</h3>
 					<p> The underlying geometrical stucture of data can yield valuable insight into the application and development of improved algorithms</p>
 				</section>
-
+-->
 				<section>
 						<table>
 							<tbody>
