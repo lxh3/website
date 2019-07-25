@@ -1,0 +1,529 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+					<h2>Dealings with Data</h2>
+					<h4>Physics, Machine Learning, and Geometry</h4>
+				</section>
+
+				<section>
+					
+					<section>
+						<h2> Outline </h2>
+						<ul>
+							<li>ML: Unsupervised Analysis of Stock Returns</li>
+							<li>ML: Model Manifold of Neural Networks</li>
+							<li>Non-Linear Scaling of the 2D NE-RFIM</li>
+						</ul>
+					</section>
+
+<!--
+					
+					<section>
+						<h3>Geometrical Underpinnings of Machine Learning</h3>
+					</section>
+	
+					<section>
+						<h4> Canonical Sectors of US Stock Markets</h4>
+						<img width=80% src='images/single_tetrahedron_presentation.png' style="background:none; border:none; box-shadow:none;">
+					</section>
+-->
+				</section>
+				
+
+				<section>
+					<section>
+						<h3>Unsupervised Machine Learning Anaylsis of US Stock Markets</h3>
+					</section>
+
+					<section>
+						<img width=80% src='images/single_tetrahedron_presentation.png' style="background:none; border:none; box-shadow:none;">
+					</section>
+
+					<section>
+						<h3> Archetypal Analysis</h3>
+						<p>
+							$ R_{ts} \sim E_{tf}W_{fs} $ where $E_{tf} = R_{ts'}C_{s'f}$
+							$$ C_{s'f} \geq 0, \Sigma_{s'}C_{s'f}=1 $$
+							$$ W_{fs} \geq 0, \Sigma_{f} W_{fs} = 1 $$
+						</p>
+					</section>
+					
+					<section>
+						<p>
+						<table  style="font-size: 0.6em">
+							<thead>
+								<tr>
+									<td>Canonical Sector</td>
+									<td>Business Lines</td>
+									<td>Prototypical Examples</td>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>c-cyclical </td>
+									<td>general and specialty retail <br>discretionary goods</td>
+									<td>Gap, Macy's, Target </td>
+								</tr>
+								<tr>
+									<td>c-energy</td>
+									<td>oil and gas services, <br>equipment, operations </td>
+									<td>Halliburton, Schlumberger </td>
+								</tr>
+								<tr>
+									<td>c-financial</td>
+									<td>banks <br> insurance (except health) </td>
+									<td>US Bancorp., Bank of America</td>
+								</tr>
+								<tr>
+									<td>c-industrial</td>
+									<td>capital goods, basic materials, <br>transport </td>
+									<td>Kennametal, Regal-Beloit </td>
+								</tr>
+								<tr>
+									<td>c-non-cyclical</td>
+									<td>consumer staples, healthcare </td>
+									<td>Pepsi, Procter & Gamble</td>
+								</tr>
+								<tr>
+									<td>c-real estate</td>
+									<td>realty investments and operations </td>
+									<td>Post Properties, Duke Realty </td>
+								</tr>
+								<tr>
+									<td>c-technology</td>
+									<td>semiconductors, computers, <br> communication devices</td>
+									<td>Cisco, Texas Instruments </td>
+								</tr>
+								<tr>
+									<td>c-utility </td>
+									<td>electric and gas suppliers </td>
+									<td>Duke Energy, Wisconsin Energy </td>
+								</tr>
+							</tbody>
+						</table>
+						</p>
+					</section>
+  
+                                        <section>
+                                                <img width=100% src='images/cumulative_log_returns_presentation.png' style="background:none; border:none; box-shadow:none;">
+                                        </section>
+
+					<section>
+						<img width=100% src='images/company_pies_presentation.png' style="background:none; border:none; box-shadow:none;">
+					</section>
+
+                                        <section>
+                                                <img width=100% src='images/flow_presentation.png' style="background:none; border:none; box-shadow:none;">
+                                        </section>
+
+                                        <section>
+						<h3> Dimensionality</h3>
+                                                <img width=100% src='images/sankey.png' style="background:none; border:none; box-shadow:none;">
+                                        </section>
+
+					<section>
+						<h2> Takeaways</h2>
+						<h4> $r^2$ values and PVE are comparable to the performance of the benchmark factor decomposition of Fama and French</h4>
+						<h4> Provides principled means to analyze company exposure and create sector specific indices</h4>
+					</section>
+				</section>
+				
+				<section>
+		
+					<section>
+						<h3>Neural Networks through the lens of Manifold Learning</h3>
+					</section>
+
+					<section>
+						<h3> Why does Science Work?</h3>
+					</section>
+
+					<section data-background="http://www.lassp.cornell.edu/sethna/Sloppy/SloppyFigs/Hierarchies/Dif3.gif">
+						<h2><font color="black">Hyper-ribbons</font></h2>
+					</section>
+
+                                        <section>
+                                                <h3> Hyper-ribbons</h3>
+                                                <img width=100% src='images/hyperRib.png' style="background:none; border:none; box-shadow:none;">
+                                        </section>
+
+					<section>
+						<img width=70% src="images/tetrahedrons_presentation.png" style="background:none; border:none; box-shadow:none;">
+					</section>
+
+					<section>
+						<h3> A Systems Biology Example</h3>
+						<img width=40% src="images/systemsbiofull.png" style="background:none; border:none; box-shadow:none;">
+						<img width=47% src="images/Erkeqns-238.jpg"  style="background:none; border:none; box-shadow:none;">
+					</section>
+	
+                                        <section>
+                                                <h3> A Systems Biology Example</h3>
+						<img width=34.25% src="images/systemsbioreduced.png">
+                                                <img width=50%  src="images/reducedEqns-378.gif">
+                                        </section>
+	
+					<section>
+						<img width=60% src='images/decoder.png' style="background:none; border:none; box-shadow:none;">
+					</section>
+
+					<section>
+						<h3> Jeffrey's Prior </h3>
+						<p> $$	H\approx\sum_k\bigg{(}\frac{\partial y_k^\theta}{\partial\theta_i}\frac{\partial y_k^\theta}{\partial\theta_j}\bigg{)}=J^TJ$$</p>
+						<p> $$ p(\theta)=\sqrt{|g_{\alpha\beta}|}=\sqrt{|J^TJ|}=\prod_i \Sigma_i $$</p>
+					</section>
+
+					<section>
+						<h3> emcee: the MCMC Hammer</h3>
+						<img width=50% src='images/DBN4_all_lyr1.png'>
+					</section>
+
+					<section>
+						<h3> Manifold Widths</h3>
+						<img width=100% src='images/widths.png'>
+					</section>
+
+                                        <section>
+						<h3> Single Digit Network</h3>
+                                                <img width=100% src='images/ones_all_lyr1_digit_location.png' style="background:none; border:none; box-shadow:none;">
+                                        </section>
+
+                                        <section>
+                                                <h3> Boundary Relationship</h3>
+                                                <p> N-1 and N-dimensional descriptions have a boundary relationship: $M_{N−1} \approx \partial M_{N}$</p> 
+                                             	<p>Transtrum et. al. has explored the relationship between manifold boundaries and
+emergent model classes</p>
+					</section>
+
+					<section>
+						<h3>Paradox</h3>
+						<p> For a hyper-ball 95.8 % of the the volume is within 10% of
+the surface. </p>
+						<p> Conversely, for a 10-D sphere with radius 1 and cap height 0.1, the volume of the cap corresponds to a tiny 0.0014%</p>
+						<p> Jeffrey's Prior $\rightarrow$ Generative Model (e.g. VAE)</p>
+                                        </section>
+
+					<section>
+						<img width=50% src='vae.png'>
+					</section>
+
+					<section>
+						<img width=50% src='vae_sample.png'>
+					</section>
+
+                                        <section>
+                                                <h3> Curse of Dimensionality</h3>
+                                                <img width=45% src='images/Ising_Replicated.png' style="background:none; border:none; box-shadow:none;">
+						<p> InPCA: Katherine Quinn et. al.</p>
+                                        </section>
+
+					<section>
+						<h2> Takeaways</h2>
+						<h4> The geometry of a model manifold can inform approaches to model simplification and reduction </h4>
+						<h4> Computational Neural Networks display a unique manifold geometry</h4>
+					</section>
+
+				</section>
+<!--	
+				<section>
+					<h3>Summary</h3>
+					<p> The underlying geometrical stucture of data can yield valuable insight into the application and development of improved algorithms</p>
+				</section>
+-->
+
+				
+				<section>
+
+					<section>
+                                       		<h3>Weird scaling for 2-D avalanches:</h3>
+                                       		<h4>Curing the faceting, and scaling in the lower critical dimension</h4>
+	                                </section>
+
+        	                        <section>
+                                                <h2>Square Lattice</h2>
+                                                <img src='images/badcollapse.png' height=400>
+                                                <img src='images/faceting.png' height=400>
+                                        </section>
+
+                                        <section>
+                                                <h2>Voronoi Lattice</h2>
+                                                <img src='images/A_collapse.png' height=350>
+                                                <img src='images/voronoi.png' height=350>
+                                        </section>
+                                
+					<section>
+                                                <h4>Eduard Vives, J&uuml;rgen Goicoechea, Jordi Ort&iacute;n, and Antoni Planes: 1995</h4>
+                                                $r_c=0.75\pm0.03$, $\ L=100$
+                                                <br><br>
+                                                <h4>Djordje Spasojevi&cacute;, Sanja Jani&cacute;evi&cacute;, and Milan Kne&#382;evi&cacute;: 2011</h4>
+                                                $r_c=0.54\pm0.02$, $\ L=131,072$, <br> collapse over range of $r\sim10\%$
+                                	</section>
+
+                                        <section> <!-- data-background='images/avalanche_background.png' data-background-repeat="repeat" >-->
+                                                <h3>Power Law Scaling</h3>
+                                                <p>
+							$A(s|w) = s^{-1}\mathcal{A}(s/w^{-1/\sigma})$
+							<br><br>
+							$\frac{dM}{dh}(h|w) = w^{\beta-\beta\delta} \frac{d\mathcal{M}}{dh}((h-h_c)/w^{\beta\delta})$
+						</p>
+					</section>
+
+					<section>
+                                                <h3>Lower Critical Dimension</h3>
+                                                <p>
+							$A(s|w) = s^{-1}\mathcal{A}(s/\Sigma(w))$
+							<br><br>
+							$\frac{dM}{dh}(h|w) = \eta(w)^{-1}\frac{d\mathcal{M}}{dh}((h-h_{max})/\eta(w))$
+						</p>
+					</section>
+
+
+                                        <section>
+                                                <table align="center">
+                                                        <thead>
+                                                                <tr>
+                                                                        <th> </th>
+                                                                        <th>Power Law Scaling</th>
+                                                                        <th>Lower Critical Dimension</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr>
+                                                                        <td align="center">$\frac{dw}{d\ell}$</td>
+                                                                        <td align="center">$-\nu w\ +\ ...$</td>
+                                                                        <td align="center">$w^2+Bw^3$</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td align="center">$\xi(w)$</td>
+                                                                        <td align="center">$(\frac{1}{w})^\nu$</td>
+                                                                        <td align="center">$(\frac{1}{w}+B)^{-B}exp(\frac{1}{w})$</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td><br></td>
+                                                                        <td> </td>
+                                                                        <td> </td>
+                                                                </tr>
+
+<tr>
+                                                                        <td align="center">$\frac{ds}{dl}$</td>
+                                                                        <td align="center">$-\frac{1}{\sigma\nu}s$</td>
+                                                                        <td align="center">$-d_f s - C s w$</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td align="center">$\frac{dh}{dl}$</td>
+                                                                        <td align="center">$\frac{\beta\delta}{\nu} h$</td>
+                                                                        <td align="center">$\lambda_h h + F h w$</td>
+                                                                </tr>
+                                                        </tbody>
+                                                </table>
+                                        </section>
+
+                                        <section data-background='A_collapse_with_Sigma.png' data-background-size=70%>
+                                        </section>
+
+                                        <section data-background='dMdh_collapse_with_eta.png' data-background-size=70%>
+                                        </section>
+
+	                                <section>
+        	                                <h3>Equilibrium</h3>
+                	                        Bray and Moore, 1985: $\frac{dw}{d\ell}=\epsilon w+A w^3+\cdots$<br><br>
+                        	                Normal Form: $\frac{dw}{d\ell}=w^3+Dw^5$<br><br>
+                                	        $\xi\sim e^{1/2w^2}(w^2)^{-D/2}$<br><br>
+                                        	Meinke and Middleton, 2005: $D=2.14$
+                                	</section>
+
+                                        <section data-background='comparison.png' data-background-size=60%>
+                                        </section>
+                                        
+					<section data-background='logplot.png' data-background-size=60%>
+                                        </section>
+
+                                        <section>
+                                                <h3>Collapsing the 2D Avalanche Model</h3>
+                                                <ul>
+                                                        <li> Faceting issues may be addressed <br> by running simulations on a Voronoi lattice</li>
+                                                        <li> A bifurcation in the RG flows explains <br> difficulty with power law scaling </li>
+                                                        <li> Numerical results consistent with <br>a lcd equal to two and $r_c=0$</li>
+                                                </ul>
+                                        </section>
+
+<!--
+                                        <section>
+	                                        <h3>Acknowledgements</h3>
+        	                                <img width=300 src='images/cornelllogo.jpg'>
+                	                        <img width=290 src='images/nsflogo.jpg'>
+                        	                <ul>
+                                	                <li> Voro++ used to generate voronoi lattice</li>
+                                        	        <li> This work was supported by NSF grant DGE-1144153.</li>
+                                                	<li> Presentation created using <a href="https://github.com/hakimel/reveal.js">reveal.js</a>.</li>
+                                        	</ul>
+                                        </section>
+-->    
+				</section>
+
+				<section>
+						<table>
+							<tbody>
+								<tr>
+									<td align='center'><img src="images/cornelllogo.png"></td>
+									<td align='center' style="vertical-align:middle" colspan="3"><h2>Thank You</h2></td>
+									<td align='center'><img src="images/nsflogo.png"></td>
+								</tr>
+								<tr>
+									<td align='center' style="font-size:0.5em">
+										<img src='images/ricky.png'><br>
+										Ricky Chacra<br>
+										Lyft
+									</td>
+									<td align='center' style="font-size:0.5em">
+										<img src='images/alex.png'><br>
+										Alex Alemi<br>
+										Google AI
+									</td>
+									<td align='center' style="font-size:0.5em">
+										<img src='images/paul.png'><br>
+										Paul Ginsparg<br>
+										Cornell
+									</td>
+									<td align='center' style="font-size:0.5em">
+										<img src='images/jim.png'><br>
+										James Sethna<br>
+										Cornell
+									</td>
+									<td align='center' style="font-size:0.5em">
+										<img src='images/archishman.png'><br>
+										Archishman Raju <br>
+										Rockefeller
+									</td>
+								</tr>
+							</tbody>
+						</table>
+				</section>
+
+				<section>
+
+					<section>
+						<h3> Supplement: Canonical Sectors</h3>
+					</section>
+
+                                        <section>
+                                                <img width=100% src='images/flow_noisy_presentation.png' style="background:none; border:none; box-shadow:none;">
+                                        </section>
+					
+                                        <section>
+                                                <img width=60% src='images/single_tetrahedron_st_presentation.png' style="background:none; border:none; box-shadow:none;">
+                                        </section>
+
+				</section>
+
+				<section>
+
+					<section>
+						<h3> Supplement: Model Manifold</h3>
+					</section>
+
+					<section>
+						<img width=60% src="images/DBN_3D_PCA.png">
+					</section>
+				</section>
+
+				<section>
+
+					<section>
+						<h3> Supplement: 2D NE-RFIM</h3>
+					</section>
+
+					<section>
+						<img width=80% src='Sigma_truncated_comparison.png'>
+					</section>
+
+                                        <section>
+                                                <img width=80% src='eta_truncated_comparison.png'>
+                                        </section>
+
+                                        <section>
+                                                <img width=80% src='Sigma_wellbehaved_comparison.png'>
+                                        </section>
+
+                                        <section>
+                                                <img width=80% src='eta_wellbehaved_comparison.png'>
+                                        </section>
+
+
+				</section>
+			</div>
+
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				center: true,
+				hash: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true },
+					{ src: 'plugin/search/search.js', async: true },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+                                        { src: 'plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

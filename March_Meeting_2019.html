@@ -1,0 +1,220 @@
+<!doctype html>
+<!--To Do 
+*get new pictures of Archishman and Jim
+*get better faceting picture from ept
+-->
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>reveal.js – The HTML Presentation Framework</title>
+
+		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+		<meta name="author" content="Hakim El Hattab">
+
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/custom.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+
+		<!-- Code syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+		<style>
+			 .imageContainer{
+				width:800px; 
+       				height:700px;
+       				background-color: rgb(40,40,40);
+
+ 			}
+		</style>
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this containerc{1}{w})^\nu$ is displayed as a slide -->
+			<div class="slides">
+				
+				<section> 
+					<h3>Weird scaling for 2-D avalanches:</h3>
+					<h4>Curing the faceting, and scaling in the lower critical dimension</h4>
+					<img height=300 src='cornelllogo.jpg'>
+					<img height=300 src='archishman.jpg'>
+					<img height=300 src='jim.jpg'>
+					<br><h4>Lorien Hayden, Archishman Raju, and James Sethna</h4>
+				</section>
+				<section>
+					<section>
+						<h2>Square Lattice</h2>
+                                                <img src='badcollapse.png' height=400>
+						<img src='faceting.png' height=400>
+					</section>
+					<section>
+						<h2>Voronoi Lattice</h2>
+						<img src='A_collapse.png' height=350>
+						<img src='voronoi.png' height=350>
+					</section>
+ 				</section>
+				<section>
+						<h4>Eduard Vives, J&uuml;rgen Goicoechea, Jordi Ort&iacute;n, and Antoni Planes: 1995</h4>
+						$r_c=0.75\pm0.03$, $\ L=100$
+						<br><br>
+						<h4>Djordje Spasojevi&cacute;, Sanja Jani&cacute;evi&cacute;, and Milan Kne&#382;evi&cacute;: 2011</h4>
+						$r_c=0.54\pm0.02$, $\ L=131,072$, <br> collapse over range of $r\sim10\%$
+				</section>
+				<section>
+					<section data-background='avalanche_background.png' data-background-repeat="repeat" >
+						<div class="imageContainer">
+						<br>
+						<h3>Power Law Scaling</h3>
+						<p>$A(s) = s^{-1}\mathcal{A}(s/w^{-1/\sigma})$ <br><br> $\frac{dM}{dh}(h) = w^{\beta-\beta\delta} \frac{d\mathcal{M}}{dh}((h-h_c)/w^{\beta\delta})$<br><br><br></p>
+						<h3>Lower Critical Dimension</h3>
+                                                <p>$A(s) = s^{-1}\mathcal{A}(s/\Sigma(w))$ <br><br> $\frac{dM}{dh}(h) = \eta(w)^{-1}\frac{d\mathcal{M}}{dh}((h-h_{max})/\eta(w))$</p>
+						</div>
+					</section>
+                                        <section>
+                                                <table align="center">
+                                                        <thead>
+                                                                <tr>
+                                                                        <th> </th>
+                                                                        <th>Power Law Scalling</th>
+                                                                        <th>Lower Critical Dimension</th>
+                                                                </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                                <tr>
+                                                                        <td align="center">$\frac{dw}{d\ell}$</td>
+                                                                        <td align="center">$-\nu w\ +\ ...$</td>
+                                                                        <td align="center">$w^2+Bw^3$</td>
+                                                                </tr>
+                                                                <tr>
+                                                                        <td align="center">$\xi(w)$</td>
+                                                                        <td align="center">$(\frac{1}{w})^\nu$</td>
+                                                                        <td align="center">$(\frac{1}{w}+B)^{-B}exp(\frac{1}{w})$</td>
+                                                                </tr>
+								<tr>
+									<td><br></td>
+									<td> </td>
+									<td> </td>
+								</tr>
+								<tr>
+									<td align="center">$\frac{ds}{dl}$</td>
+									<td align="center">$-\frac{1}{\sigma\nu}s$</td>
+									<td align="center">$-d_f s - C s w$</td>
+								</tr>
+								<tr>
+									<td align="center">$\frac{dh}{dl}$</td>
+									<td align="center">$\frac{\beta\delta}{\nu} h$</td>
+									<td align="center">$\lambda_h h + F h w$</td>
+								</tr>
+                                                        </tbody>
+                                                </table>
+                                        </section>
+					<section data-background='A_collapse.png' data-background-size="900px">
+						<div style='color:rgb(40,40,40)'>$ \quad \quad \quad \quad \Sigma(w)=\big{(}\frac{1}{w}+B\big{)}^{-B d_f+C}exp\big{(}\frac{d_f}{w}\big{)}$</div>
+						<br><br><br><br><br><br><br><br><br>
+					</section>
+					<section data-background='dMdh_collapse.png' data-background-size="900px">
+						<div style="color:rgb(40,40,40)">$\qquad \qquad \qquad \eta(w)=\big{(}\frac{1}{w}+B\big{)}^{B \lambda_h-F}exp\big{(}-\frac{\lambda_h}{w}\big{)}$</div>
+						<br><br><br><br><br><br><br><br><br>
+					</section>
+				</section>
+				<section>
+					<h3>Equilibrium</h3>
+					Bray and Moore, 1985: $\frac{dw}{d\ell}=\epsilon w+A w^3+\cdots$<br><br>
+					Normal Form: $\frac{dw}{d\ell}=w^3+Dw^5$<br><br>
+					$\xi\sim e^{1/2w^2}(w^2)^{-D/2}$<br><br>
+					Meinke and Middleton, 2005: $D=2.14$
+				</section>
+				<section>
+					<section data-background='Sigma_compare_params.png' data-background-size="900px">
+						<div style="color:rgb(40,40,40)">$w=\frac{r-r_c}{r_s}$</div>
+                                                <br><br><br><br><br><br><br><br>
+					</section>
+                                	<section data-background='eta_compare_params.png' data-background-size="900px">
+		                                <br><br><br><br><br><br><br>
+					        <div style="color:rgb(40,40,40)">$w=\frac{r-r_c}{r_s}$</div>
+                                	</section>
+				</section>
+				<section>
+					<section>
+						<h3>Collapsing the 2D Avalanche Model</h3>
+						<ul>
+							<li> Faceting issues may be addressed <br> by running simulations on a Voronoi lattice</li>
+							<li> A bifurcation in the RG flows explains <br> difficulty with power law scaling </li>
+							<li> Numerical results consistent with <br>a lcd equal to two and $r_c=0$</li>
+						</ul>
+					</section>
+					<section>
+					<h3>Acknowledgements</h3>
+					<img width=300 src='cornelllogo.jpg'>
+					<img width=290 src='nsflogo.jpg'>
+					<ul>
+						<li> Voro++ used to generate voronoi lattice</li>
+						<li> This work was supported by NSF grant DGE-1144153.</li>
+						<li> Presentation created using <a href="https://github.com/hakimel/reveal.js">reveal.js</a>.</li>
+					</ul>
+					</section>
+				</section>
+				<section>
+					<section data-background='Sigma_compare.png' data-background-size="900px">
+					</section>
+					<section data-background='eta_compare.png' data-background-size="900px">
+					</section>
+					<section data-background='logplot.png' data-background-size="900px">
+					</section>
+				</section>
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+
+			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/math/math.js', async: true }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>
