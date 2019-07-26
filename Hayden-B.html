@@ -159,15 +159,66 @@
                                                 <img width=100% src='images/flow_presentation.png' style="background:none; border:none; box-shadow:none;">
                                         </section>
 
+					<section>
+						<h3> Dimensionality</h3>
+					</section>
+
+                                        <section>
+                                                <img width=70% src="images/tetrahedrons_presentation.png" style="background:none; border:none; box-shadow:none;">
+                                        </section>
+
                                         <section>
 						<h3> Dimensionality</h3>
                                                 <img width=100% src='images/sankey.png' style="background:none; border:none; box-shadow:none;">
                                         </section>
 
+                                        <section>
+                                                <h3> Dimensionality</h3><br>
+                                                $||E_{tf}-E_{tf'}S_{f'f}||_F^2$<br><br>
+                                                $\Sigma_{f'}S_{f'f}=1$
+                                        </section>
+
 					<section>
-						<h2> Takeaways</h2>
-						<h4> $r^2$ values and PVE are comparable to the performance of the benchmark factor decomposition of Fama and French</h4>
-						<h4> Provides principled means to analyze company exposure and create sector specific indices</h4>
+						<img width=40% src='W28.png' style="background:none; border:none; box-shadow:none;">
+						<img width=60% src='W38.png' style="background:none; border:none; box-shadow:none;">
+					</section>
+
+					<section>
+						<h3>Coefficient of Determination</h3><br>
+						$r^2 = 1-SSE/SST$<br><br>
+						$SSE =  ||R-EW||_F^2\quad$ and $\quad SST = ||R||_F^2$
+					</section>
+
+					<section>
+						<table valign='center'>
+							<thead>
+								<th></th>
+								<th align='center'>8 (3) Factor AA<br></th>
+								<th align='center'> Fama and French<br></th>
+							</thead>
+							<tbody>
+								<tr valign='center'>
+									<td align='center' valign='center'>Normalized <br>Data</td>
+									<td align='center' valign='center'>11.1% (5.61%)</td>
+									<td align='center' valign='center'>4.75%</td>
+								</tr>
+								<tr>
+									<td align='center'>S&P 500</td>
+									<td align='center'>93.5%</td>
+									<td align='center'>99.4%</td>
+								</tr>
+								<tr>
+									<td align='center' valign='center'>Equal <br>Weighted<br> S&P</td>
+									<td align='center' valign='center'><br>99.0% (97%)</td>
+									<td align='center' valign='center'><br>95.8%</td>
+								</tr>
+							</tbody>
+						</table>
+					</section>
+
+					<section>
+						<h4> Archetypal Analysis provides factors (sector time series) which are competitive with standard benchmark factor models in finance.</h4>
+						<h4> The factors obtained via AA are conceptually rich and provide a principled means to analyze company exposure and create sector specific indices</h4>
 					</section>
 				</section>
 				
@@ -186,13 +237,14 @@
 					</section>
 
                                         <section>
+						<h3> Hyper-ribbons</h3>
+                                                <img width=70% src="hyperribbon-concept.png" style="background:none; border:none; box-shadow:none;">
+                                        </section>
+
+                                        <section>
                                                 <h3> Hyper-ribbons</h3>
                                                 <img width=100% src='images/hyperRib.png' style="background:none; border:none; box-shadow:none;">
                                         </section>
-
-					<section>
-						<img width=70% src="images/tetrahedrons_presentation.png" style="background:none; border:none; box-shadow:none;">
-					</section>
 
 					<section>
 						<h3> A Systems Biology Example</h3>
@@ -204,6 +256,15 @@
                                                 <h3> A Systems Biology Example</h3>
 						<img width=34.25% src="images/systemsbioreduced.png">
                                                 <img width=50%  src="images/reducedEqns-378.gif">
+                                        </section>
+
+                                        <section>
+                                                <h3>Motivation</h3>
+                                                <p>
+                                                Neural network with N-1 neurons performs almost as well as network with N neurons (suggests Nth dimension thin)<br> 
+                                                Is it possible to evaporate neurons in the same way as in the systems biology network?<br>
+                                                Can the manifold provide insight for generating new ML architectures?<br>
+                                                </p>
                                         </section>
 	
 					<section>
@@ -234,7 +295,17 @@
                                         <section>
                                                 <h3> Boundary Relationship</h3>
                                                 <p> N-1 and N-dimensional descriptions have a boundary relationship: $M_{N−1} \approx \partial M_{N}$</p> 
-                                             	<p>Transtrum et. al. has explored the relationship between manifold boundaries and
+					</section>
+
+                                        <section>
+						<h3> Boundary Relationship</h3>
+                                                <img width=50% src="images/DBN_3D_PCA.png">
+                                        </section>
+
+					<section>
+						<h3> Boundary Relationship</h3>
+						<img width=50% src='mbam.png' style="background:none; border:none; box-shadow:none;">
+						<p>Transtrum et. al. has explored the relationship between manifold boundaries and
 emergent model classes</p>
 					</section>
 
@@ -261,7 +332,6 @@ the surface. </p>
                                         </section>
 
 					<section>
-						<h2> Takeaways</h2>
 						<h4> The geometry of a model manifold can inform approaches to model simplification and reduction </h4>
 						<h4> Computational Neural Networks display a unique manifold geometry</h4>
 					</section>
@@ -293,7 +363,11 @@ the surface. </p>
                                                 <img src='images/A_collapse.png' height=350>
                                                 <img src='images/voronoi.png' height=350>
                                         </section>
-                                
+                               
+					<section>
+						<h3> Power Law Scaling is Insufficient</h3>
+					</section>
+ 
 					<section>
                                                 <h4>Eduard Vives, J&uuml;rgen Goicoechea, Jordi Ort&iacute;n, and Antoni Planes: 1995</h4>
                                                 $r_c=0.75\pm0.03$, $\ L=100$
@@ -301,6 +375,10 @@ the surface. </p>
                                                 <h4>Djordje Spasojevi&cacute;, Sanja Jani&cacute;evi&cacute;, and Milan Kne&#382;evi&cacute;: 2011</h4>
                                                 $r_c=0.54\pm0.02$, $\ L=131,072$, <br> collapse over range of $r\sim10\%$
                                 	</section>
+
+					<section>
+						<h3> Power Law Scaling assumes a hyperbolic fixed point in the Renormalization Group flows</h3>
+					</section>
 
                                         <section> <!-- data-background='images/avalanche_background.png' data-background-repeat="repeat" >-->
                                                 <h3>Power Law Scaling</h3>
@@ -320,14 +398,19 @@ the surface. </p>
 						</p>
 					</section>
 
+					<section>
+						<h3>Normal Form Theory</h3><br>
+						$\frac{dw}{dl} = a w^2 + b w^3 + c w^4 + \cdots$<br><br>
+						$\frac{dw}{dl} = w^2 + B w^3$
+					</section>
 
                                         <section>
                                                 <table align="center">
                                                         <thead>
                                                                 <tr>
                                                                         <th> </th>
-                                                                        <th>Power Law Scaling</th>
-                                                                        <th>Lower Critical Dimension</th>
+                                                                        <th align='center'>Power Law Scaling</th>
+                                                                        <th align='center'>Lower Critical Dimension</th>
                                                                 </tr>
                                                         </thead>
                                                         <tbody>
@@ -367,18 +450,34 @@ the surface. </p>
                                         <section data-background='dMdh_collapse_with_eta.png' data-background-size=70%>
                                         </section>
 
-	                                <section>
-        	                                <h3>Equilibrium</h3>
-                	                        Bray and Moore, 1985: $\frac{dw}{d\ell}=\epsilon w+A w^3+\cdots$<br><br>
-                        	                Normal Form: $\frac{dw}{d\ell}=w^3+Dw^5$<br><br>
-                                	        $\xi\sim e^{1/2w^2}(w^2)^{-D/2}$<br><br>
-                                        	Meinke and Middleton, 2005: $D=2.14$
-                                	</section>
+                                        <section>
+                                                <h3>Equilibrium</h3>
+                                                Bray and Moore, 1985: $\frac{dw}{d\ell}=\epsilon w+A w^3+\cdots$<br><br>
+                                                Normal Form: $\frac{dw}{d\ell}=w^3+Dw^5$<br><br>
+                                                $\xi\sim e^{1/2w^2}(w^2)^{-D/2}$<br><br>
+                                                Meinke and Middleton, 2005: $D=2.14$
+                                        </section>
 
                                         <section data-background='comparison.png' data-background-size=60%>
                                         </section>
-                                        
-					<section data-background='logplot.png' data-background-size=60%>
+
+                                        <section data-background='logplot.png' data-background-size=60%>
+                                        </section>
+
+                                        <section>
+                                                <img width=80% src='Sigma_truncated_comparison.png'>
+                                        </section>
+
+                                        <section>
+                                                <img width=80% src='eta_truncated_comparison.png'>
+                                        </section>
+
+                                        <section>
+                                                <img width=80% src='Sigma_wellbehaved_comparison.png'>
+                                        </section>
+
+                                        <section>
+                                                <img width=80% src='eta_wellbehaved_comparison.png'>
                                         </section>
 
                                         <section>
@@ -459,6 +558,7 @@ the surface. </p>
 
 				</section>
 
+<!--
 				<section>
 
 					<section>
@@ -469,7 +569,8 @@ the surface. </p>
 						<img width=60% src="images/DBN_3D_PCA.png">
 					</section>
 				</section>
-
+-->
+<!--
 				<section>
 
 					<section>
@@ -494,6 +595,7 @@ the surface. </p>
 
 
 				</section>
+-->
 			</div>
 
 		</div>
